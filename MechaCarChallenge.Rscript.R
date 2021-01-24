@@ -37,9 +37,9 @@ lot_summary <- Suspension_Coil_demo %>% summarize(Suspension_Coil_demo, Mean_PSI
 #compare PSI for all Manufacturing lots versus population mean with t-test
 
 #t.test(log10(Suspension_Coil_demo$Miles_Driven),mu=mean(log10(population_table$Miles_Driven))) (from module)
-t.test(Suspension_Coil_demo$PSI, mu=1500)
+t.test(Suspension_Coil_demo$PSI, mu = 1500)
 
 #compare PSI for ea Manufacturing lot versus population mean with t-test
-t.test(subset(Suspension_Coil_demo,Manufacturing_Lot=="Lot1")$PSI, mu=1500)
-t.test(subset(Suspension_Coil_demo,Manufacturing_Lot=="Lot2")$PSI, mu=1500)
-t.test(subset(Suspension_Coil_demo,Manufacturing_Lot=="Lot3")$PSI, mu=1500)
+t.test(subset(Suspension_Coil_demo,Manufacturing_Lot=="Lot1")$PSI, mu = 1500)
+t.test(subset(Suspension_Coil_demo,Manufacturing_Lot=="Lot2")$PSI, mu = 1500)
+t.test(subset(Suspension_Coil_demo,Manufacturing_Lot=="Lot3")$PSI, mu = 1500)
