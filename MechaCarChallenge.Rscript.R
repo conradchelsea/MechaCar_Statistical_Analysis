@@ -28,9 +28,13 @@ Suspension_Coil_demo <- read.csv(file='Suspension_Coil.csv',check.names=F,string
 
 total_summary <- summarize(Suspension_Coil_demo, Mean_PSI=mean(PSI),Median_PSI=median(PSI),Variance_PSI=var(PSI),SD=sd(PSI), .groups = 'keep')
 
+
 #create summary table with multiple columns
 
-lot_summary <- Suspension_Coil_demo %>% summarize(Suspension_Coil_demo, Mean_PSI=mean(PSI),Median_PSI=median(PSI),Variance_PSI=var(PSI),SD=sd(PSI), .groups = 'keep')
+#lot_summary <- Suspension_Coil_demo %>% summarize(Suspension_Coil_demo, Mean_PSI=mean(PSI),Median_PSI=median(PSI),Variance_PSI=var(PSI),SD=sd(PSI), .groups = 'keep')
+
+lot_summary <- Suspension_Coil_demo %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI),Median_PSI=median(PSI),Variance_PSI=var(PSI),SD=sd(PSI))
+
 
 #Deliverable 3
 
