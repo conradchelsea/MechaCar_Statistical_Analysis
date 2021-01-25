@@ -12,7 +12,7 @@ Using R to perform linear regression analysis, collect summary statistics on the
 ## Linear Regression to Predict MPG
 After building a linear model to predict the mpg of MechaCar prototypes that passseed through all the variables in the data source, I was able to conclude the following:  
 
-- The variables/coefficients that provided a non-random amount of variance to the mpg values in the dataset were vehicle lenght, and ground clearance. Both had p-values well below the .05 signifigance level, meaning their probability of being wrong is high, and we would need to reject our null hypothesis. 
+- The variables/coefficients that provided a non-random amount of variance to the mpg values in the dataset were vehicle length, and ground clearance. Both had p-values well below the .05 signifigance level, meaning their probability of being wrong is high, and we would need to reject our null hypothesis. 
 
 - The slope of the linear model is considered to be not equal to zero because the probability value is below the significance level. 
 
@@ -32,16 +32,19 @@ Upon building Total Summary and Lot Summary dataframes to summarize the Suspensi
 By building t-tests to determine if the PSI across all manufacturing lots were statistically different from the population mean of 1,500 pounds per square inch, I was able to deduce the following:
 
 - Lot 1:
+
 Lot 1 had a p-value of 1, meaning it was not statistically significant as it has a mean equal to 1500.
 
 ![t-test Lot1](https://user-images.githubusercontent.com/71476009/105654648-140ca880-5e84-11eb-9c29-9d761e68dd59.png)
 
 - Lot 2:
+
 Lot 2 had a low p-value of 0.6072, giving reason to reject the null hypothesis. 
 
 ![t-test Lot 2](https://user-images.githubusercontent.com/71476009/105655245-51256a80-5e85-11eb-8ef9-ca3e0c05a458.png)
 
 - Lot 3:
+
 Lot 3 had a significant p-value at 0.04168.
 
 ![t-test lot 3](https://user-images.githubusercontent.com/71476009/105655975-d5c4b880-5e86-11eb-928d-8fd088b34d7c.png)
@@ -53,7 +56,7 @@ Lot 3 had a significant p-value at 0.04168.
 ## Study Design: MechaCar vs Competition
 To qualify how MechaCar performs against the competition in the field of safety, I would consider further testing the following:
 
-- A few metrics I would test are the NHTSA rates, Total Motor Vehicle Incident Reports, Average Lifecycle of the vehicle, and the Federal Motor Vehicle Standards.
+- The metrics I would test are the NHTSA rates, Total Motor Vehicle Incident Reports, Average Lifecycle of the vehicle, and the Federal Motor Vehicle Standards.
 
 - I would have to figure out the baseline measurement, possibly whether or not the accident included fatalities. The null hypothesis would be the vehicle's similarities in damage after impact. The alternative hypothesis confirms the differences with safety and usability. Were there fatalities and if not was the vehicle drivable after the accident? 
 
